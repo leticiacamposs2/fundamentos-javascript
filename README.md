@@ -3,7 +3,7 @@
 
 ----
 
-🤯 Aulas
+## 🤯 Aulas
 
 - [x] Introdução ao curso
 - [ ] Iniciando com Javascript
