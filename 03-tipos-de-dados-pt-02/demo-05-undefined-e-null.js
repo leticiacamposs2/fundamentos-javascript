@@ -22,3 +22,10 @@ console.log(
     variavelSemInicializacao,
     typeof (variavelSemInicializacao)
 )
+
+let podeViajar = null
+
+console.log(
+    podeViajar,
+    typeof(podeViajar)
+)
