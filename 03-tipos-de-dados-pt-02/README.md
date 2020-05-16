@@ -10,6 +10,6 @@
 - [x] Tipos Booleanos
 - [x] Demostração: Tipos Booleanos
 - [x] Trabalhando com arrays
-- [ ] Demonstração: Trabalhando com arrays
-- [ ] Trabalhando com objects
-- [ ] Demonstração: Trabalhando com objects
+- [x] Demonstração: Trabalhando com arrays
+- [x] Trabalhando com objects
+- [x] Demonstração: Trabalhando com objects
