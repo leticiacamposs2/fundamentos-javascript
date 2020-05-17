@@ -10,7 +10,7 @@
 - [x] [Tipos de dados - parte 01](./02-tipos-de-dados-pt-01)
 - [x] [Tipos de dados - parte 02](./03-tipos-de-dados-pt-02)
 - [x] [Tipos de dados - parte 03](./04-tipos-de-dados-pt-03)
-- [ ] Controlando o fluxo de dados
+- [x] [Controlando o fluxo de dados](./05-controlando-o-fluxo-de-dados)
 - [ ] Módulos em Javascript
 - [ ] O Ciclo de vida Javascript
 - [ ] Projeto final: Construindo um jogo de Mémoria
