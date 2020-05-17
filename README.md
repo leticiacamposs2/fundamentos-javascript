@@ -9,7 +9,7 @@
 - [x] [Iniciando com Javascript](./01-iniciando-com-javascript)
 - [x] [Tipos de dados - parte 01](./02-tipos-de-dados-pt-01)
 - [x] [Tipos de dados - parte 02](./03-tipos-de-dados-pt-02)
-- [ ] [Tipos de dados - parte 03](./04-tipos-de-dados-pt-03)
+- [x] [Tipos de dados - parte 03](./04-tipos-de-dados-pt-03)
 - [ ] Controlando o fluxo de dados
 - [ ] Módulos em Javascript
 - [ ] O Ciclo de vida Javascript
