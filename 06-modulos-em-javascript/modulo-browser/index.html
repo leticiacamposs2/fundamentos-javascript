@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>Módulo em Navegadores</title>
+        <script src="./main.js"></script>
+        <script src="./matematica.js"></script>
     </head>
     <body>
         <form>
@@ -9,6 +11,20 @@
                 <option value="dividir">Dividir</option>
                 <option value="subtrair">Subtrair</option>
             </select>
+            <br/>
+            <!-- for, quando alguém clicar no texto ele vai direcionar o foco da tela para este campo -->
+            <label for="valor1">Valor1</label>
+            <input type="number" id="valor1">
+            <br />
+            <label for="valor2">Valor2</label>
+            <input type="number" id="valor2">
+            <br />
+            <br />
+            <input type="button" value="Calcular" id="btnCalcular">
+            <input type="reset" value="Limpar" id="btnLimpar">
+            <br />
+            <br />
+            <output id="resultado">Aqui vai o resultado!!</output>
         </form>
     </body>
 </html>
