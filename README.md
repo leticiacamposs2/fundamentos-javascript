@@ -12,6 +12,6 @@
 - [x] [Tipos de dados - parte 03](./04-tipos-de-dados-pt-03)
 - [x] [Controlando o fluxo de dados](./05-controlando-o-fluxo-de-dados)
 - [x] [Módulos em Javascript](./06-modulos-em-javascript)
-- [ ] O Ciclo de vida Javascript
+- [x] [O Ciclo de vida Javascript](./07-ciclo-de-vida-javascript)
 - [ ] Projeto final: Construindo um jogo de Mémoria
 - [ ] Próximos passos

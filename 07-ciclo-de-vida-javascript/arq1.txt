@@ -1,0 +1,4 @@
+Olá eu sou o arquivo 1
+agora sim 
+vou aprender 
+javascript
