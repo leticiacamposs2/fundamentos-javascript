@@ -61,4 +61,62 @@ fs.readFile('arquivo.txt', callback)
 ````
 
 
+## Promise
 
+Recurso nativo do javascript
+
+````
+
+new Promise((resolve, reject) => {
+    return resolve(sucesso)
+    return reject(erro)
+})
+.then(sucesso => ({}))
+.catch(erro => ({}))
+.then(sucesso => ({}))
+.then(sucesso => ({}))
+.catch(erro => ({}))
+.finally(resultado => ({}))
+
+````
+
+````
+
+const readFile = caminho =>
+    new Promise((resolve, reject) => {
+        fs.readFile(caminho, (error, res) => {
+            error ? reject(error) : resolve(res)
+        })
+    })
+
+````
+
+````
+
+readFile(arquivo.txt)
+.then(conteudo, fn)
+.catch(erro, fn)
+
+````
+
+Outro exemplo:
+
+````
+
+procurarUsuario()
+    .then(usuario
+
+procurarEndereco(idUsuario)
+    .then(endereco
+
+procurarTelefone(idUsuario)
+    .then(telefone
+
+imprimirUsuario(
+    nome, rua, telefone
+)
+.catch(error
+
+````
+
+Importante lembrar que cada .then herda o resultado do anterior
