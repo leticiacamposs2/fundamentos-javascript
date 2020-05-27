@@ -64,6 +64,13 @@ class JogoDaMemoria {
         // guardamos os herois para trabalhar com
         this.heroisOcultos = heroisOcultos
     }
+    exibirHerois(nomeDoHeroi) {
+        // vamos procurar essse heroi pelo nome em nossos heroisIniciais
+        // vamos obter somente a imagem dele
+        const { img } = this.heroisIniciais.find(({ nome }) => nomeDoHeroi === nome)
+        // vamos criar a funcao na tela, para exibir somente o heroi selecionado
+        this.tela.exibirHerois(nomeDoHeroi, img)
+    }
     verificarSelecao(id, nome) {
         const item = { id, nome }
         // vamos verificar a quantidade de herois selecionados
@@ -89,12 +96,14 @@ class JogoDaMemoria {
                     // o usuario nao clicar duas vezes no mesmo
                     opcao1.id !== item.id
                     ) {
-                        alert('combinacao correta!' + item.nome)
+                        this.exibirHerois(item.nome)
+                        // como o padrao é true, nao precisa passar nada
+                        this.tela.exibirMensagem()
                         // para a execucao
                         return;
                     }
 
-                    alert('combinação incorreta!')
+                    this.tela.exibirMensagem(false)
                     // fim do case!!
                 break;
         }

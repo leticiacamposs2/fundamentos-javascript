@@ -11,7 +11,7 @@ Construindo um jogo da memória, utilizando os principais conceitos abordados du
 - [x] Criando função para embaralhar o jogo
 - [x] Escondendo cartas
 - [x] Encontrando a combinação de cartas
-- [ ] Exibir herois a partir da combinação correta
+- [x] Exibir herois a partir da combinação correta
 - [ ] Criando mensagens customizadas e utilitários
 - [ ] Exibindo todas as cartas do jogo e adicionando timer
 - [ ] Configurando ambiente
