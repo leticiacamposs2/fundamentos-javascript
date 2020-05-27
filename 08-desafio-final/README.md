@@ -7,8 +7,8 @@ Construindo um jogo da memória, utilizando os principais conceitos abordados du
 
 - [x] O que faremos?
 - [x] Criando estrutura de pastas e esqueleto inicial
-- [ ] Retornando imagens dinâmicas ao jogo
-- [ ] Criando função para embaralhar o jogo
+- [x] Retornando imagens dinâmicas ao jogo
+- [x] Criando função para embaralhar o jogo
 - [ ] Escondendo cartas
 - [ ] Encontrando a combinação de cartas
 - [ ] Exibir herois a partir da combinação correta
@@ -23,9 +23,3 @@ Construindo um jogo da memória, utilizando os principais conceitos abordados du
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Iconfinder](https://www.iconfinder.com/)
-
-----
-
-## Utils
-
-- `map` - com o map é possível acessar cada item do array e modificá-lo
