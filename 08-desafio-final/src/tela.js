@@ -7,6 +7,7 @@ const ID_BTN_JOGAR = "jogar"
 const ID_MENSAGEM = "mensagem"
 const ID_CARREGANDO = "carregando"
 const ID_CONTADOR = "contador"
+const ID_BTN_MOSTRAR_TUDO = "mostrarTudo"
 
 const CLASSE_INVISIVEL = "invisible"
 
@@ -86,5 +87,34 @@ class Tela {
             return;
         }
         carregando.classList.add(CLASSE_INVISIVEL)
+    }
+    static iniciarContador() {
+        let contarAte = 3
+        const elementoContador = document.getElementById(ID_CONTADOR)
+        // vamor substituir o texto Começando $$contador segundos
+        // onde está o $$contador adicionaremos o valor
+        const identificadorNoTexto = "$$contador"
+        const textoPadrao = `Começando em ${identificadorNoTexto} segundos...`
+        // vamos criar uma funcao em linha para atualizar o texto
+        // a cada segundo
+        const atualizarTexto = () => 
+        (elementoContador.innerHTML = textoPadrao.replace(identificadorNoTexto, contarAte--))
+
+        atualizarTexto()
+        // a cada segundo, vai chamar a funcao atualizar texto
+        // essa função vai substituir o $$contador pelo `contarAte` diminuindo o contador
+        // retornando o idDoIntervalo para parar ele mais tarde
+        const idDoIntervalo = setInterval(atualizarTexto, 1000)
+        return idDoIntervalo
+    }
+
+    static limparContador(idDoIntervalo) {
+        clearInterval(idDoIntervalo)
+        // deixamos sem texto
+        document.getElementById(ID_CONTADOR).innerHTML = ""
+    }
+    static configurarBotaoMostrarTudo(funcaoOnClick) {
+        const btnMostrarTudo = document.getElementById(ID_BTN_MOSTRAR_TUDO)
+        btnMostrarTudo.onclick = funcaoOnClick
     }
 }
