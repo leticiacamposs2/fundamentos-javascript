@@ -23,3 +23,9 @@ Construindo um jogo da memória, utilizando os principais conceitos abordados du
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Iconfinder](https://www.iconfinder.com/)
+
+----
+
+## Utils
+
+- `map` - com o map é possível acessar cada item do array e modificá-lo
