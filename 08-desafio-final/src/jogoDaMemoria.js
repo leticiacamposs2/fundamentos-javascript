@@ -14,6 +14,9 @@ class JogoDaMemoria {
             { img: './arquivos/groot.svg', name: 'groot' },
             { img: './arquivos/mulhermaravilha.svg', name: 'mulhermaravilha' }
         ]
+
+        this.iconePadrao = './arquivos/padrao.svg'
+        this.heroisEscondidos = []
     }
     // para usar o this, não podemos usar static!
     inicializar() {
@@ -34,7 +37,30 @@ class JogoDaMemoria {
         })        
         // ordernar
         .sort(() => Math.random() - 0.5)
+        
         this.tela.atualizarImagens(copias)
+        // vamos esperar 1 segundo para atualizar a tela
+        setTimeout(() => {
+            this.esconderHerois(copias)
+        }, 1000);
+    }
+    esconderHerois(herois) {
+        // vamos trocar a imagem de todos os herois existentes
+        // pelo icone padrão
+        // como fizemos no construtor, vamor extrair somente o necessario
+        // usando a sintaze ({ chave: 1 }) estamos falando que vamos retornar
+        // o que tiver dentro dos parenteses
+        // quando nao usamos : (exemplo do id), o JS entende que o nome
+        // é o mesmo do valor. Ex. id: id, vira id, 
+        const heroisOcultos = herois.map(( {nome, id}) => ({
+            id,
+            nome,
+            img: this.iconePadrao
+        }))
+        // atualizamos a tela com os herois ocultos
+        this.tela.atualizarImagens(heroisOcultos)
+        // guardamos os herois para trabalhar com
+        this.heroisOcultos = heroisOcultos
     }
     jogar() {
         this.embaralhar()
