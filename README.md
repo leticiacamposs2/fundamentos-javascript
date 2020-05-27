@@ -13,5 +13,12 @@
 - [x] [Controlando o fluxo de dados](./05-controlando-o-fluxo-de-dados)
 - [x] [Módulos em Javascript](./06-modulos-em-javascript)
 - [x] [O Ciclo de vida Javascript](./07-ciclo-de-vida-javascript)
-- [x] [Projeto final: Construindo um jogo de Mémoria](./08-desafio-final)
+- [x] [Projeto final: Construindo um jogo de Mémoria](./memory-game)
 - [x] Próximos passos
+
+----
+
+## 🎓 Projeto Final
+Jogo da memória - Herois
+
+
