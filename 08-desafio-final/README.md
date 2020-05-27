@@ -13,9 +13,9 @@ Construindo um jogo da memória, utilizando os principais conceitos abordados du
 - [x] Encontrando a combinação de cartas
 - [x] Exibir herois a partir da combinação correta
 - [x] Criando mensagens customizadas e utilitários
-- [ ] Exibindo todas as cartas do jogo e adicionando timer
-- [ ] Configurando ambiente
-- [ ] Publicando jogo da memória na web
+- [x] Exibindo todas as cartas do jogo e adicionando timer
+- [x] Configurando ambiente
+- [x] Publicando jogo da memória na web
 
 ----
 
